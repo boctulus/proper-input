@@ -10,8 +10,7 @@ Now it's possible to really enforce min, max and step!
 
 ## Author
 
-Pablo Bozzolo (alias boctulus)
-boctulus@gmail.com
+Pablo Bozzolo (boctulus) <boctulus@gmail.com>
 
 ## Rationale
 
