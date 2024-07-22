@@ -35,7 +35,7 @@ These features ensure a reliable and efficient user experience, addressing commo
 
 ## Installation
 
-Simply include the proper-input.js file in your project.
+Simply include the `proper-input.js` file in your project.
 
 
 ```html
