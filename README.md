@@ -4,7 +4,9 @@
 
 ProperInput is a lightweight and efficient JavaScript class designed to enhance the functionality of `<input type="number">` elements in web forms. It addresses common limitations of these inputs, especially regarding the application of `min`, `max`, and `step` attributes.
 
-Now it's possible to really enforce min, max and step!
+In the native implementation of INPUT type="number", the min, max and step are not really forced. There is no validation!
+
+Now it's possible to really *enforce* min, max and step!
 
 ... and the best part is it works with the native `<input type="number">` element.
 
