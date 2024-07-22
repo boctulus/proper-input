@@ -35,10 +35,11 @@ These features ensure a reliable and efficient user experience, addressing commo
 
 ## Installation
 
-Simply include the ProperInput.js file in your project.
+Simply include the proper-input.js file in your project.
+
 
 ```html
-<script src="ProperInput.js"></script>
+<script src="proper-input.js"></script>
 
 <input type="number" id="myInput" min="0" max="100" step="0.5">
 
