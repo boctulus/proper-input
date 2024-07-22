@@ -98,9 +98,12 @@ Perfect for percentages requiring two-decimal precision, like interest rates or 
 ```
 
 Useful for selecting years, ensuring only valid years within the specified range are entered.
-Contributing
 
-Contributions are welcome. Please open an issue to discuss major changes before submitting a pull request.
 
-License
+# Contributing
+
+Everyone is welcome to contribute. Please open an issue to discuss major changes before submitting a pull request.
+
+# License
+
 MIT License
