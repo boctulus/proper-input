@@ -39,10 +39,6 @@ Simply include the ProperInput.js file in your project.
 
 ```html
 <script src="ProperInput.js"></script>
-```
-
-```html
-<script src="ProperInput.js"></script>
 
 <input type="number" id="myInput" min="0" max="100" step="0.5">
 
