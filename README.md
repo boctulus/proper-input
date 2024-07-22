@@ -40,21 +40,29 @@ Basic Usage
 </script>
 ```
 
-API
+# API
 
 Constructor
 
+```javascript
 const properInput = new ProperInput(roundFn);
+```
 
-roundFn (optional): Custom rounding function. Defaults to Math.round.
+Other methods
 
-Methods
-
+```javascript
 setSelector(selector): Sets a custom selector for the inputs.
-setRoundFunction(fn): Sets a custom rounding function.
-init(): Initializes the functionality on all selected inputs.
+```
 
-Use Cases
+```javascript
+setRoundFunction(fn): Sets a custom rounding function.
+```
+
+```javascript
+init(): Initializes the functionality on all selected inputs.
+```
+
+# Use Cases
 
 1. Input with Decimal Step
 
