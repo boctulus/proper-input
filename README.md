@@ -86,7 +86,7 @@ $('#numMeters, #numBoxes').on('input change', function() {
 });
 ```
 
-# API
+### API
 
 Constructor
 
@@ -118,7 +118,7 @@ ProperInput allows you to dynamically control whether the `step` attribute is en
 enforceStep(value): Enables or disables step enforcement.
 ```
 
-# Use Cases
+## Use Cases
 
 1. Input with Decimal Step
 
@@ -156,10 +156,10 @@ Perfect for percentages requiring two-decimal precision, like interest rates or 
 Useful for selecting years, ensuring only valid years within the specified range are entered.
 
 
-# Contributing
+## Contributing
 
 Everyone is welcome to contribute. Please open an issue to discuss major changes before submitting a pull request.
 
-# License
+## License
 
 MIT License
