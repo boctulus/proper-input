@@ -108,6 +108,16 @@ setRoundFunction(fn): Sets a custom rounding function.
 init(): Initializes the functionality on all selected inputs.
 ```
 
+## Advanced Features
+
+### Controlling Step Enforcement
+
+ProperInput allows you to dynamically control whether the `step` attribute is enforced or not, using the `enforceStep()` method.
+
+```javascript
+enforceStep(value): Enables or disables step enforcement.
+```
+
 # Use Cases
 
 1. Input with Decimal Step
