@@ -118,6 +118,23 @@ ProperInput allows you to dynamically control whether the `step` attribute is en
 enforceStep(value): Enables or disables step enforcement.
 ```
 
+Usage:
+
+```javascript
+const properInput = new ProperInput();
+properInput.init();
+
+// Disable step enforcement
+properInput.enforceStep(false);
+
+// Re-enable step enforcement
+properInput.enforceStep(true);
+```
+
+When step enforcement is disabled, the input will still respect the min and max attributes, but will allow any value within that range, regardless of the step attribute.
+
+This feature is particularly useful in scenarios where you want to temporarily allow more flexible input, such as during initial data entry, while still maintaining the ability to enforce the step when needed.
+
 ## Use Cases
 
 1. Input with Decimal Step
