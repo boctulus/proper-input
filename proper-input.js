@@ -70,10 +70,29 @@ class ProperInput
     return newValue;
   }
 
-  init() {
+  initializeValue(input, delay) {
+    setTimeout(() => {
+      const currentValue = parseFloat(input.value);
+      const min          = parseFloat(input.getAttribute('min'));
+      const max          = parseFloat(input.getAttribute('max'));
+      const step         = parseFloat(input.getAttribute('step'));
+      const newValue     = this.processValue(currentValue, min, max, step);
+
+      if (!isNaN(newValue) && newValue !== currentValue) {
+        input.value = newValue.toFixed(this.countDecimals(step));
+      }
+    }, delay);
+  }
+
+  init(delay = 500) {
     if (typeof document !== 'undefined') {
       this.inputs = document.querySelectorAll(this.inputSelector);
-      this.inputs.forEach(input => this.setupInput(input));
+      
+      this.inputs.forEach(input => {
+        this.setupInput(input);
+        this.initializeValue(input, delay);
+      });
+
     }
   }
 
@@ -85,14 +104,18 @@ class ProperInput
         this.handleInput(input);
       }, 750);
     });
+
+    // Procesar el valor inicial
+    this.handleInput(input);
   }
 
   handleInput(input) {
     const currentValue = parseFloat(input.value);
-    const min = parseFloat(input.getAttribute('min'));
-    const max = parseFloat(input.getAttribute('max'));
-    const step = parseFloat(input.getAttribute('step'));
-    const newValue = this.processValue(currentValue, min, max, step);
+    const min          = parseFloat(input.getAttribute('min'));
+    const max          = parseFloat(input.getAttribute('max'));
+    const step         = parseFloat(input.getAttribute('step'));
+    const newValue     = this.processValue(currentValue, min, max, step);
+    
     if (!isNaN(newValue) && newValue !== currentValue) {
       input.value = newValue.toFixed(this.countDecimals(step));
       this.temporarilyDisableInput(input);
