@@ -114,6 +114,8 @@ init(): Initializes the functionality on all selected inputs.
 
 ProperInput allows you to dynamically control whether the `step` attribute is enforced or not, using the `enforceStep()` method.
 
+This way it's possible to disable the step when a value is entered by the user in the <INPUT>, making it valid only when it gets increased/decreased. This prevents a 100 from being rounded to 99, for example, if the step is 33 with a min of zero.
+
 ```javascript
 enforceStep(value): Enables or disables step enforcement.
 ```
