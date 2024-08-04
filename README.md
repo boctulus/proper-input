@@ -135,7 +135,7 @@ When step enforcement is disabled, the input will still respect the min and max 
 
 This feature is particularly useful in scenarios where you want to temporarily allow more flexible input, such as during initial data entry, while still maintaining the ability to enforce the step when needed.
 
-## Use Case
+## Full example
 
 ```html
 <input type="number" id="numBoxes"   min="3"   step="1">
