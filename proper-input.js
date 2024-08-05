@@ -70,6 +70,7 @@ class ProperInput
     return newValue;
   }
 
+  // Not in use
   initializeValue(input, delay) {
     setTimeout(() => {
       const currentValue = parseFloat(input.value);
@@ -84,13 +85,13 @@ class ProperInput
     }, delay);
   }
 
-  init(delay = 500) {
+  init() {
     if (typeof document !== 'undefined') {
       this.inputs = document.querySelectorAll(this.inputSelector);
       
       this.inputs.forEach(input => {
         this.setupInput(input);
-        this.initializeValue(input, delay);
+        // this.initializeValue(input, 500);
       });
 
     }
@@ -123,7 +124,9 @@ class ProperInput
   }
 
   countDecimals(value) {
-    if (Math.floor(value) === value) return 0;
+    if (Math.floor(value) === value) 
+      return 0;
+    
     return value.toString().split(".")[1].length || 0;
   }
 
